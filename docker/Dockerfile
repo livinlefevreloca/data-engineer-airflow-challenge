@@ -21,6 +21,13 @@ ENV LC_ALL en_US.UTF-8
 ENV LC_CTYPE en_US.UTF-8
 ENV LC_MESSAGES en_US.UTF-8
 
+# Define other ENV variables
+ENV AWS_KEY AKIAIPXIRJNTGULXJ3VQ
+ENV AWS_SECRET_KEY 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
+ENV API_KEY 3cfa38be50084be8986364aa017fc5d7
+ENV S3_BUCKET1 headlines-tempus
+ENV S3_BUCKET2 keyword-headlines-tempus
+
 RUN set -ex \
     && buildDeps=' \
         python3-dev \
